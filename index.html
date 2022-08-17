@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js"></script>
     <title>Drum Machine</title>
 </head>
     <body>
         <div id="drum-machine">
-            <div id="display"></div>
-            <div class="drum-pad" id="Heater_1">Q</div>
-            <div class="drum-pad" id="Heater_2">W</div>
-            <div class="drum-pad" id="Heater_3">E</div>
-            <div class="drum-pad" id="Heater_4">A</div>
-            <div class="drum-pad" id="Clap">S</div>
-            <div class="drum-pad" id="Open_HH">D</div>
-            <div class="drum-pad" id="Kick_n_Hat">Z</div>
-            <div class="drum-pad" id="Kick">X</div>
-            <div class="drum-pad" id="Closed_HH">C</div>
+            <div id="display"><p class="audioName">Algo</p></div>
+            <div id="container">
+                <div onmouseup="playSound('Q')" class="drum-pad" id="Heater_1"><audio class="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>Q</div>
+                <div onmouseup="playSound('W')" class="drum-pad" id="Heater_2"><audio class="clip" id="W" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>W</div>
+                <div onmouseup="playSound('E')" class="drum-pad" id="Heater_3"><audio class="clip" id="E" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>E</div>
+                <div onmouseup="playSound('A')" class="drum-pad" id="Heater_4"><audio class="clip" id="A" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>A</div>
+                <div onmouseup="playSound('S')" class="drum-pad" id="Clap"><audio class="clip" id="S" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>S</div>
+                <div onmouseup="playSound('D')" class="drum-pad" id="Open_HH"><audio class="clip" id="D" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>D</div>
+                <div onmouseup="playSound('Z')" class="drum-pad" id="Kick_n_Hat"><audio class="clip" id="Z" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>Z</div>
+                <div onmouseup="playSound('X')" class="drum-pad" id="Kick"><audio class="clip" id="X" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>X</div>
+                <div onmouseup="playSound('C')" class="drum-pad" id="Closed_HH"><audio class="clip" id="C" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>C</div>
+            </div>
         </div>
     </body>
 </html>
