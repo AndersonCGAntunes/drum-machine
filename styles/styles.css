@@ -14,11 +14,12 @@
 
 .drum-pad {
     background-color: rgb(128, 128, 128);
-    border: 1px solid black;
     font-size: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
 }
 
 #display {
